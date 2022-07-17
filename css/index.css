@@ -170,6 +170,13 @@
     padding: 15px 0;
     font-family: "Muller Bold";
     font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.pizza-menu-card button:hover {
+    background-color: #b99150;
+    color: white;
 }
 
 .form-section {
