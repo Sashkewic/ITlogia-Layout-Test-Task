@@ -1,0 +1,399 @@
+@font-face {
+    font-family: "Muller Regular";
+    src: url("../fonts/MullerRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Muller Bold";
+    src: url("../fonts/MullerBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Muller Extra Bold";
+    src: url("../fonts/MullerExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0px 5px 5px -5px #a9a9a9;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo-and-nav {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 28px;
+    font-family: "Muller Extra Bold";
+    margin-left: 10px;
+    color: #ffc468;
+    text-transform: uppercase;
+}
+
+.navigation .link {
+    margin: 0 30px;
+    color: #bb9040;
+    font-family: "Muller Regular";
+    font-size: 16px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu i {
+    font-size: 22px;
+    color: #bb9040;
+}
+
+.menu-content {
+    max-width: 1200px;
+    margin: 150px auto;
+}
+
+.menu-content h1 {
+    font-size: 45px;
+    font-family: "Muller Extra Bold";
+    color: #b99150;
+}
+
+.menu-content h1 span {
+    color: #ffaf18;
+}
+
+.wrapper {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits {
+    display: flex;
+}
+
+.info-benefit {
+    display: flex;
+    margin-top: 30px;
+}
+
+.info-benefit .description {
+    margin-left: 20px;
+}
+
+.info-benefit .description h4 {
+    font-size: 16px;
+    font-family: "Muller Extra Bold";
+    color: #ffaf18;
+}
+
+.info-benefit .description p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #b99150;
+    font-family: "Muller Regular";
+}
+
+.pizza-menu {
+    max-width: 1200px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza-menu-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pizza-menu-title {
+    font-size: 35px;
+    font-family: "Muller Extra Bold";
+    color: #b99150;
+    text-align: center;
+}
+
+.pizza-menu-card {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: -1px 1px 8px 2px rgba(135, 135, 135, 0.61);
+}
+
+.pizza-menu-card span {
+    font-family: "Muller Bold";
+    font-size: 18px;
+}
+
+.pizza-menu-card p {
+    margin-top: 20px;
+    font-family: "Muller Regular";
+    font-size: 14px;
+}
+
+.pizza-menu-card button {
+    margin-top: 20px;
+    border: none;
+    background: #ffaf18;
+    padding: 15px 0;
+    font-family: "Muller Bold";
+    font-size: 16px;
+}
+
+.form-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-desc .title {
+    color: #ffaf18;
+    font-size: 35px;
+    font-family: "Muller Extra Bold";
+}
+
+.form-desc .title span {
+    color: #b99150;
+    font-size: 35px;
+    font-family: "Muller Extra Bold";
+}
+
+.form-desc .form-text {
+    font-family: "Muller Regular";
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.form form input::placeholder {
+    color: #b99150;
+}
+
+.form form input {
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #b99150;
+    font-family: "Muller Regular";
+    outline: none;
+}
+
+input[type="submit"] {
+    background: #ffaf18;
+    font-family: "Muller Bold" !important;
+    font-size: 16px;
+    cursor: pointer;
+    border: none !important;
+}
+
+.form-desc,
+.form {
+    width: 300px;
+}
+
+.form-image img {
+    width: 100%;
+}
+
+.form-alert {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffaf18;
+    font-family: "Muller Regular";
+    font-size: 20px;
+    text-transform: uppercase;
+    display: none;
+}
+
+/* Модалка */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Модальное содержание (изображение) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Заголовок модального изображения ( текст изображения) - та же ширина, что и изображение */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Добавить анимацию - величение модели */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* Кнопка закрытия */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .menu-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .poster-image img {
+        width: 100%;
+    }
+
+    .form-section {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .mobile-menu {
+        display: block;
+        z-index: 10;
+        margin-right: 20px;
+    }
+
+    .mobile-menu.active {
+        position: fixed;
+        right: 0;
+    }
+
+    .mobile-menu:hover {
+        cursor: pointer;
+    }
+
+    .header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+    }
+
+    header .logo-and-nav {
+        z-index: 10;
+    }
+
+    header .navigation.active .link {
+        margin: 20px 0;
+    }
+
+    .benefits {
+        flex-wrap: wrap;
+    }
+
+    .poster-image {
+        margin-top: 20px;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form-section {
+        padding: 20px;
+    }
+}
